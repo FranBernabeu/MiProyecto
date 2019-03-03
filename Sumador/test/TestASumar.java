@@ -5,63 +5,31 @@ import org.junit.jupiter.api.Test;
 class TestASumar {
 
 	@Test
-	void testObject() {
-		fail("Not yet implemented");
-	}
-
+    public void testUnaCifra() {
+        ASumar sumi = new ASumar("5");
+        String resultado = sumi.mostrar();
+        assertEquals("5 = 5",resultado );
+    }
+	
 	@Test
-	void testGetClass() {
-		fail("Not yet implemented");
-	}
-
+    public void testNegativo() {
+        ASumar sumi = new ASumar("-5");
+        String resultado = sumi.mostrar();
+        assertEquals("Es un número negativo",resultado );
+    }
+	
 	@Test
-	void testHashCode() {
-		fail("Not yet implemented");
+	public void testTotal() {
+		ASumar sumi = new ASumar("3433");
+		int resultado = sumi.total();
+		assertEquals(13,resultado );
 	}
-
+	
 	@Test
-	void testEquals() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testClone() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testToString() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testNotify() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testNotifyAll() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testWaitLong() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testWaitLongInt() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testWait() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testFinalize() {
-		fail("Not yet implemented");
-	}
-
+    public void testVariasCifra() {
+        ASumar sumi = new ASumar("3433");
+        String resultado = sumi.mostrar();
+        assertEquals("3 + 4 + 3 + 3 = 13",resultado );
+    }
+     
 }
