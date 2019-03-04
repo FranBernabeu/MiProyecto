@@ -15,10 +15,9 @@ public class ASumar {
  * @return
  */
 	public String mostrar() {
-		String numero = valor_inicial;
-		if (numero.length() == 1) {
-			return (numero + " = " + numero);
-		} else if (numero.length() == 2 && numero.substring(0, 1).equals("-")) {
+		if (valor_inicial.length() == 1) {
+			return (valor_inicial + " = " + valor_inicial);
+		} else if (valor_inicial.substring(0, 1).equals("-")) {
 			return ("Es un número negativo");
 		} else {
 			String suma = "";
