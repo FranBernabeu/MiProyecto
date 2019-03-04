@@ -11,7 +11,7 @@ public class ASumar {
 		String numero = valor_inicial;
 		if (numero.length() == 1) {
 			return (numero + " = " + numero);
-		} else if  numero.substring(0, 1).equals("-")) {
+		} else if ( numero.substring(0, 1).equals("-")) {
 			return ("Es un número negativo");
 		} else {
 			String suma = "";
